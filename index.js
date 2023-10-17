@@ -1,7 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const axios = require('axios');
-const base64 = require('base-64');
 
 dotenv.config();
 
@@ -22,7 +21,7 @@ app.post('/sent', async (req, res) => {
 						to: phone,
 					},
 				],
-				from: 'InfoSMS',
+				from: 'Mohirdev',
 				text: message,
 			},
 		],
