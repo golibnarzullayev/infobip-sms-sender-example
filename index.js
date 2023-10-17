@@ -34,8 +34,7 @@ app.post('/sent', async (req, res) => {
 		},
 	});
 
-	console.log(response.data.messages[0].status);
-	res.send('Ishladi');
+	res.json({ data: response.data });
 });
 
 app.listen(process.env.PORT, () => {
